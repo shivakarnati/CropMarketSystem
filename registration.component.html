@@ -1,0 +1,33 @@
+<div class="col-md-8 order-md-1">
+  <h4 class="mb-3">Farmer Registration</h4>
+  <form (ngSubmit)="onSubmit()" >
+      <div class="col-md-6 mb-6">
+          Name
+        <input type="text" class="form-control" name="name" [(ngModel)]="register.name">
+      </div>
+    <div class="col-md-6 mb-6">
+      mobileNumber
+      <div class="input-group">
+        <input type="text" class="form-control" name="mobileNumber" placeholder="mobileNumber" [(ngModel)]="register.mobileNumber">
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-6">
+      Email 
+      <input type="email" class="form-control" name="email" placeholder="you@example.com" [(ngModel)]="register.emailId">
+      <div class="invalid-feedback">
+        Please enter a valid email address .
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-6">
+      Password 
+      <input type="password" class="form-control" name="password" placeholder="password" [(ngModel)]="register.password">
+    </div>
+    <div>
+      <button type="submit">submit</button>
+    </div>
+    </form>
+    <p> if already registed :</p>
+    <button type="button" routerLink="/login">login</button>
+    </div>
